@@ -21,7 +21,6 @@ export class EmpolyeesComponent implements OnInit, OnDestroy {
     this.subscription = this.employeesService.empolyeesSubject.pipe(switchMap(
       (employeesList) => {
         this.employeesList = employeesList;
-        this.tableHead = Object.keys(this.employeesList[0]);
         this.configuration = {
           countPerPage: this.employeesService.pageCount,
           items: this.employeesService.originalEmployeesList

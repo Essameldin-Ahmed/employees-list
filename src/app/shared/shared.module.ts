@@ -8,7 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
-import { PiTableComponent } from './pi-table/pi-table.component';
+import { PiTableComponent } from './components/pi-table/pi-table.component';
 
 @NgModule({
   declarations: [

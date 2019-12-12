@@ -1,0 +1,7 @@
+<nav aria-label="Page navigation example" *ngIf="configuration && showPagination">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" (click)="navigateTo(currentPage - 1)" [ngClass]="{dimmed: currentPage <= 1}">Previous</a></li>
+      <li class="page-item" *ngFor="let item of getItemsArray()"><a class="page-link" (click)="navigateTo(item)" [ngClass]="{dimmed: currentPage === item}">{{item}}</a></li>
+      <li class="page-item"><a class="page-link" (click)="navigateTo(currentPage + 1)" [ngClass]="{dimmed: currentPage >= pagesCount}">next</a></li>
+    </ul>
+  </nav>

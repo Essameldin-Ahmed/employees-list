@@ -1,0 +1,22 @@
+@import "~src/styles/variables.scss";
+
+a.page-link {
+    cursor: pointer;
+    background-color: $mainColor;
+    color: #fff;
+    transition: opacity .4s ease;
+    &:hover {
+        opacity: .9;
+        color: #fff
+    }
+}
+
+a.dimmed {
+    background-color: #ccc;
+    color: #888;
+    cursor: default;
+    &:hover {
+        color: #888;
+    }
+}
+

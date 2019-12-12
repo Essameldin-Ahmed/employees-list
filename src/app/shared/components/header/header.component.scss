@@ -1,0 +1,13 @@
+@import "~src/styles/variables.scss";
+
+.navbar {
+  background-color: $mainColor;
+  color: #fff;
+
+  .navbar-brand svg {
+    fill: #fff;
+  }
+  .nav-link {
+      text-transform: uppercase;
+  }
+}

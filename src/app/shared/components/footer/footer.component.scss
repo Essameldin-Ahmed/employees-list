@@ -1,0 +1,12 @@
+@import "~src/styles/variables.scss";
+
+footer {
+    padding: 15px 0;
+    background-color: $mainColor;
+    color: #fff;
+
+    .rights {
+        margin: 0;
+        font-size: 14px;
+    }
+}

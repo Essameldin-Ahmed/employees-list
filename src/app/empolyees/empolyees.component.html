@@ -1,0 +1,15 @@
+<section class="emoloyees-section">
+    <div class="container">
+        <div class="table-wrapper">
+            <app-pi-table [tableData]="{itemsList:employeesList, tableHead: tableHead, totalItemsCount: getTotalListCount()}"
+                *ngIf="employeesList && employeesList.length > 0 && tableHead && tableHead.length > 0; else noData">
+            </app-pi-table>
+            <app-pagination [configuration]="configuration" *ngIf="configuration"
+                (pageNumberChanged)="changePage($event)"></app-pagination>
+
+            <ng-template #noData>
+                <h1>there are no data availible now</h1>
+            </ng-template>
+        </div>
+    </div>
+</section>

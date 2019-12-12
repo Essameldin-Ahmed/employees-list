@@ -52,7 +52,7 @@ export class EmpolyeesService {
 
 
   getPageEmployees(pageNumber = 1) {
-    if (!this.originalEmployeesList && pageNumber >= 1 && pageNumber <= (this.getListCount() / this.pageCount)) {
+    if (!this.originalEmployeesList || pageNumber < 1 || pageNumber > ((this.getListCount() / this.pageCount) +1)) {
       return null
     }
     let startIndex = (pageNumber - 1) * this.pageCount
